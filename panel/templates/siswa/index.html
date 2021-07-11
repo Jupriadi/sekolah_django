@@ -1,0 +1,57 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+
+{% block content %}
+  
+<script type="text/javascript">
+     $(".sidebar-item").removeClass("active");
+     $("#siswa").addClass("active");
+</script>
+<hr>
+<div class="container">
+    <section class="section">
+        <div class="row" id="table-striped">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header">
+                        <strong class="card-title">Tabel Data Guru</strong>
+                        <a href="/panel/tambahguru" class="btn  btn-sm bg-primary text-light position-absolute end-0 me-4 rounded-pill d-none d-md-block"><i class="bi bi-plus-circle-fill"></i> Tambah Data</a>
+                    </div>
+                    <div class="card-content container pb-3">
+                       
+                        <div class="table-responsive d-none d-md-block">
+                            <table class="table table-hover table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>NAMA</th>
+                                        <th>ALAMAT</th>
+                                        <th>JENIS KELAMIN</th>
+                                        <th>HP / Whatsapp</th>
+                                        <th>PENDIDIKAN</th>
+                                        <th>JURUSAN</th>
+                                        <th>PILIHAN</th>
+                                    </tr>
+                                </thead>
+                                
+                                <tbody>
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Striped rows end -->
+</div>
+
+<div class="postion-absolute shadow d-md-none position-fixed me-4 mb-4 bg-success rounded-circle end-0 bottom-0"  style="width: 50px;height: 50px;">
+    <div class="positon-relative">
+        <a href="/panel/tambahguru" class="text-light fs-1 position-absolute top-50 start-50 translate-middle">
+            <i class="bi bi-plus-circle-dotted"></i>
+        </a>
+    </div>
+</div>
+
+{% endblock content %}

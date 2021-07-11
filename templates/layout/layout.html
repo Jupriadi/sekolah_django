@@ -1,0 +1,13 @@
+{% load static %}
+{% include "components/header.html" %}
+    
+            <div class="page-heading">
+                <h3>{{judulhalaman}}</h3>
+            </div>
+            <div class="page-content">
+               {% block content %}
+                 
+               {% endblock content %}
+            </div>
+
+    {% include "components/footer.html" %}
